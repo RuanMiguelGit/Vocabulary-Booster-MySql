@@ -9,4 +9,3 @@ FROM
 WHERE
     MONTH(H.START_DATE) IN (1 , 2, 3)
 ORDER BY Nome_completo ASC , H.START_DATE;
-
