@@ -8,4 +8,3 @@ FROM
     INNER JOIN hr.regions AS R
     ON R.REGION_ID = F.REGION_ID
     ORDER BY País ASC;
-
