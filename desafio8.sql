@@ -1,11 +1,13 @@
 SELECT 
-    UCASE(CONCAT(E.FIRST_NAME, ' ', E.LAST_NAME)) AS Nome_completo,
-    H.START_DATE AS 'Data de início',
-    E.SALARY AS 'Salário'
+    C.ContactName AS 'Nome de contato',
+    S.ShipperName AS 'Empresa que fez o envio',
+    O.OrderDate AS 'Data do pedido'
 FROM
-    hr.employees AS E
+    w3schools.customers AS C
         INNER JOIN
-    hr.job_history AS H ON E.JOB_ID = H.JOB_ID
+    w3schools.orders AS O ON O.CustomerID = C.CustomerID
+        INNER JOIN
+    w3schools.shippers AS S ON O.ShipperID = S.ShipperID
 WHERE
-    MONTH(H.START_DATE) IN (1 , 2, 3)
-ORDER BY Nome_completo ASC , H.START_DATE;
+    S.ShipperName IN ('Speedy Express' , 'United Package')
+ORDER BY C.ContactName ASC , S.ShipperName , O.OrderDate ASC;
