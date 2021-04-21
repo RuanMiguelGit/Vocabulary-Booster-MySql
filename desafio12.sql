@@ -12,4 +12,5 @@ WHERE
     F.JOB_ID = S.JOB_ID
         AND F.FIRST_NAME <> S.FIRST_NAME
         AND 'Nome completo funcionário 1' <> 'Nome completo funcionário 2'
-ORDER BY CONCAT(F.FIRST_NAME, ' ', F.LAST_NAME) , CONCAT(S.FIRST_NAME, ' ', S.LAST_NAME)
+ORDER BY
+ CONCAT(F.FIRST_NAME, ' ', F.LAST_NAME) , CONCAT(S.FIRST_NAME, ' ', S.LAST_NAME)

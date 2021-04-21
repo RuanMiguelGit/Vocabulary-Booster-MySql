@@ -6,4 +6,5 @@ FROM
         INNER JOIN
     w3schools.orders AS O ON E.EmployeeID = O.EmployeeID
 GROUP BY CONCAT(E.FirstName, ' ', E.LastNAME)
-ORDER BY COUNT(*) ASC;
+ORDER BY COUNT(*)
+ ASC;
