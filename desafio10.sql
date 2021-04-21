@@ -10,4 +10,4 @@ FROM
 GROUP BY ProductName
 HAVING (Média > 20)
 ORDER BY ROUND(AVG(OD.Quantity), 2) ASC,
- ProductName ASC;
+ProductName ASC;

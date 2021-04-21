@@ -7,4 +7,4 @@ FROM
     w3schools.orders AS O ON E.EmployeeID = O.EmployeeID
 GROUP BY CONCAT(E.FirstName, ' ', E.LastNAME)
 ORDER BY COUNT(*)
- ASC;
+ASC;
