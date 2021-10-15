@@ -32,8 +32,6 @@ Utilizar SUBQUERIES
 
 Criar queries mais eficientes através do EXISTS
 
-Montar blocos de código SQL reutilizáveis com STORED PROCEDURES e STORED FUNCTIONS
----
 <h1> Como Rodar o projeto</h1>
 <ul>
   <li> Git Clone no Projeto</li>
@@ -41,11 +39,4 @@ Montar blocos de código SQL reutilizáveis com STORED PROCEDURES e STORED FUNCT
   <li> Inicie o MySql</li>
   <li> Execute Cada Arquivo</li> </ul>
 
-<h2>Membros do Projeto</h2>
-<ul>
-  <li>Ruan Miguel => https://github.com/ruanmiguelgit</li>
-</ul>
 
-
-
-  
